@@ -45,6 +45,19 @@ nav ul>li{
   padding-top: 0.5rem;
   font-weight:500;
 }
+nav ul>li:hover{
+  cursor: pointer;
+}
+.gnb{
+  width:45px;
+  position: fixed;
+  right:10px;
+  top:20px;
+  display:none;
+}
+.gnb:hover{
+  cursor: pointer;
+}
 /* 섹션01 스타일 */
 section{
   width:100%;
@@ -60,19 +73,23 @@ section{
   text-align: center;
   padding-top:13rem;
 }
-.s01>img{
+.s1img{
   width:45%;
+  margin: 0 auto;
 }
-.s01>p{
+.s1t{
   padding:2.5rem 0;
 }
-.s01>a{
+.s1t1{}
+.s1t2{}
+.s1btn{
   width:10rem;
   font-size:1.1rem;
   position:relative;
   display: inline-block;
   padding:1.2rem;
   border:2px solid #fff;
+  background: rgba(0, 0, 0, 0.5);
 }
 /* 섹션02 스타일 */
 .sec02{
@@ -104,23 +121,24 @@ section{
   color:#9b9b9b;
   line-height: 1.5rem;
 }
-hr{
+hr{}
+.s2hr{
   width:2rem;
-  margin:1.5rem 0;
+  margin:2.5rem 0;
   border:1px solid #000;
 }
 .s2img{}
-.s02 ul>li{
+.s2img>ul{}
+.s2img>ul>li{
   float:left;
   width:20%;
   padding-right:1.5rem;
 }
-.s2img>ul>li>h3{
+.s2lh{
   padding-top:1.5rem;
-  font-weight: bold;
   font-size: 1.5rem;
 }
-.s2img>ul>li>p{
+.s2lt{
   padding-top:1rem;
   color:#9b9b9b;
 }
@@ -129,20 +147,25 @@ hr{
 .sec03{
   width:100%;
 }
-.s3_lt{
+.s3t{
   height:462px;
-  background: no-repeat center url("images/bread,coffe/main_bread.png");
-  background-size: cover;
   text-align: center;
   width:50%;
   color:#fff;
   font-size:2rem;
   float:left;
 }
-.s3_lt>div{
+.s3lt{
+  background: no-repeat center url("images/bread,coffe/main_bread.png");
+  background-size: cover;
+}
+.s3t>div{
   display: table-cell;
   vertical-align: middle;
   background-color: rgba(0, 0, 0, 0.3);
+}
+.s3br{
+  display: none;
 }
 .s3t1{}
 strong{
@@ -152,33 +175,16 @@ strong{
   padding:2rem 0;
   font-size: 2.5rem;
 }
-.s3_lt>div>a{
+.s3t>div>a{
   font-size:1rem;
   position:relative;
   display: inline-block;
   padding:0.5rem 2rem;
   border:2px solid #fff;
 }
-.s3_rt{
-  height:462px;
+.s3rt{
   background: no-repeat center url("images/bread,coffe/main_coffe.png");
   background-size: cover;
-  text-align: center;
-  width:50%;
-  color:#fff;
-  font-size:2rem;
-}
-.s3_rt>div{
-  display: table-cell;
-  vertical-align: middle;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-.s3_rt>div>a{
-  font-size:1rem;
-  position:relative;
-  display: inline-block;
-  padding:0.5rem 2rem;
-  border:2px solid #fff;
 }
 /* 섹센04 스타일 */
 .sec04{
@@ -270,7 +276,7 @@ strong{
 .s5bg>div>ul>li:first-child{
   margin-left: 0;
 }
-.s05_t{
+.s05{
   width:100%;
   box-sizing:border-box;
   display: table;
@@ -291,7 +297,7 @@ strong{
   font-size: 1rem;
   color:#9b9b9b;
 }
-.s05_t>a{
+.s05>a{
   font-size:1rem;
   position:relative;
   display: inline-block;
@@ -309,12 +315,12 @@ strong{
 }
 .s6bg{
       background-color: rgba(255, 255, 255, 0.7);
-        height:470px;
+      height:470px;
 }
 .s06{
+  width:90%;
   box-sizing: border-box;
-  /* width:1240px; */
-  margin:0 130px;
+  margin:0 120px;
   padding:5rem 0;
 }
 .s6t{
@@ -322,9 +328,16 @@ strong{
   float:left;
   text-align: left;
 }
+.s6hr{
+  width:2rem;
+  margin:0.5rem 0;
+  padding-top:1px;
+  border:1px solid #000;
+}
 .s6t1{
   font-size:2.2rem;
   padding-bottom: 2rem;
+  color:#9b9b9b;
 }
 .s6t2{
   font-size:2.5rem;
@@ -337,7 +350,7 @@ strong{
 .s6img>ul>li{
   width:15%;
   display: inline-block;
-  padding-left:1.5rem;
+  padding-left:1rem;
 }
 .s6img>ul>li>p{
   font-weight:bold;

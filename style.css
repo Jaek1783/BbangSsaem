@@ -7,6 +7,7 @@ body{
   line-height: 140%;
   box-sizing: border-box;
   word-break: keep-all;
+  font-family: "Montserrat";
 }
 img{
   width:100%;
@@ -26,7 +27,11 @@ header{
   border-bottom: 1px solid #fff;
   color:#fff;
   font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.3);
+}
+header.bg{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #000;
+    transition: all 0.3s;
 }
 h1{
   display:inline-block;
@@ -58,16 +63,85 @@ nav ul>li:hover{
 .gnb:hover{
   cursor: pointer;
 }
+.sGnb{
+  position:fixed;
+  left:0;
+  top:0;
+  z-index: 1000;
+  width:100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  height:100%;
+  display: none;
+}
+.sNav{
+  width:50%;
+  margin: 0 auto;
+  text-align:center;
+}
+.sNav>li{
+  font-size: 3rem;
+  line-height: 140%;
+}
 /* 섹션01 스타일 */
+/* 슬라이더 스타일 */
+.container{
+  position:relative;
+  width:100%;
+  overflow: hidden;
+}
+.slider-container{
+  position:absolute;
+  width:100%;
+  /* overflow: hidden; */
+  /* display:flex; */
+}
+.slider-container.animated{
+  transition: left .3s ease-in;
+}
+.slide{
+  position:absolute;
+  width:100%;
+  box-sizing: border-box;
+  top:50%;
+  transform: translateY(-50%);
+  text-align:center;
+  overflow: hidden;
+  padding:10% 0;
+}
+.s1bg1{
+  background: no-repeat center url("images/main/main_B01.jpg");
+  background-size: cover;
+}
+.s1bg2{
+  background: no-repeat center url("images/main/main_B02.png");
+  background-size: cover;
+}
+.s1sbBox{
+  width:100%;
+  z-index: 10;
+  position:absolute;
+  bottom:10%;
+  /* padding-bottom:10rem; */
+  text-align: center;
+}
+.s1sb{
+  width:10px;
+  height:10px;
+  background-color:#333;
+  border-radius: 45%;
+  display: inline-block;
+}
+.click{
+  background-color:#fff;
+}
 section{
   width:100%;
 }
 .sec01{
   font-size: 2rem;
   color:#fff;
-  height:64rem;
-  background: no-repeat center url("images/main/main_B02.png");
-  background-size: cover;
+  height:55rem;
+  padding-bottom:1rem;
 }
 .s01{
   text-align: center;
@@ -93,7 +167,7 @@ section{
 }
 /* 섹션02 스타일 */
 .sec02{
-    margin-top:8rem;
+  margin-top:8rem;
     margin-bottom:8rem;
 }
 .s02{

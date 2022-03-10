@@ -65,22 +65,36 @@ nav ul>li:hover{
 }
 .sGnb{
   position:fixed;
-  left:0;
+  /* left:0; */
   top:0;
   z-index: 1000;
   width:100%;
   background-color: rgba(0, 0, 0, 0.9);
   height:100%;
-  display: none;
+  /* display: none; */
+}
+.close{
+  width:45px;
+  position: absolute;
+  right:10px;
+  top:20px;
+}
+.close:hover{
+  cursor: pointer;
+}
+.sGnb.animated{
+  transition: left .3s ease-in;
 }
 .sNav{
   width:50%;
   margin: 0 auto;
   text-align:center;
+  position:relative;
 }
 .sNav>li{
   font-size: 3rem;
   line-height: 140%;
+  cursor: pointer;
 }
 /* 섹션01 스타일 */
 /* 슬라이더 스타일 */
@@ -92,6 +106,7 @@ nav ul>li:hover{
 .slider-container{
   position:absolute;
   width:100%;
+  height:55rem;
   /* overflow: hidden; */
   /* display:flex; */
 }
@@ -102,27 +117,48 @@ nav ul>li:hover{
   position:absolute;
   width:100%;
   box-sizing: border-box;
-  top:50%;
-  transform: translateY(-50%);
   text-align:center;
   overflow: hidden;
-  padding:10% 0;
+  padding:20% 0;
+  /* float:left; */
 }
 .s1bg1{
-  background: no-repeat center url("images/main/main_B01.jpg");
+  background: no-repeat center url("images/main/main_B01.png");
   background-size: cover;
 }
 .s1bg2{
   background: no-repeat center url("images/main/main_B02.png");
   background-size: cover;
 }
-.s1sbBox{
-  width:100%;
-  z-index: 10;
+.s1bg3{
+  background: no-repeat center url("images/main/main_B03.png");
+  background-size: cover;
+}
+.s1bg4{
+  background: no-repeat center url("images/main/main_B04.png");
+  background-size: cover;
+}
+.s1bg5{
+  background: no-repeat center url("images/main/main_B05.png");
+  background-size: cover;
+}
+.pager{
   position:absolute;
-  bottom:10%;
-  /* padding-bottom:10rem; */
+  left:0;right:0;bottom:8%;
   text-align: center;
+}
+.pager span{
+  width:10px;
+  height:10px;
+  background: #000;
+  border-radius: 50%;
+  display: inline-block;
+  text-indent:-9999em;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.pager span.active{
+  background-color:#fff;
 }
 .s1sb{
   width:10px;
@@ -131,9 +167,6 @@ nav ul>li:hover{
   border-radius: 45%;
   display: inline-block;
 }
-.click{
-  background-color:#fff;
-}
 section{
   width:100%;
 }
@@ -141,11 +174,16 @@ section{
   font-size: 2rem;
   color:#fff;
   height:55rem;
-  padding-bottom:1rem;
+  /* padding-bottom:1rem; */
 }
 .s01{
+  width:80%;
+  margin:0 auto;
+  border: 1px solid #fff;
   text-align: center;
-  padding-top:13rem;
+  padding-bottom: 3rem;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 20px 4px 32px rgba(255, 255,255, 0.4);
 }
 .s1img{
   width:45%;

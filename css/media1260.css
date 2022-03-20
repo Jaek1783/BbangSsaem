@@ -1,0 +1,145 @@
+@charset "UTF-8";
+@media (max-width:1260px) {
+  /* 섹션01 변형스타일 */
+  .sec01{
+    height:45rem;
+  }
+  .s01{
+    text-align: center;
+    /* padding-top:10rem; */
+  }
+  .s1t{
+    padding:1rem 0;
+  }
+  .s1t1{
+    font-size:1.5rem;
+  }
+  .s1t2{
+    font-size:1.5rem;
+  }
+  .s1img{
+    width:65%;
+  }
+  .s1btn{
+    width:25%;
+    font-size:1.1rem;
+    position:relative;
+    display: inline-block;
+    padding:1rem;
+    border:2px solid #fff;
+  }
+  /* 섹션02 변형스타일 */
+  .s02{
+    width:960px;
+    box-sizing: border-box;
+  }
+  .s2t{}
+  .s2img>ul>li{
+    float:left;
+    width:17%;
+  }
+  /* 섹션03 변형스타일 */
+  .s3t2{
+    padding:2rem 0;
+    font-size: 2rem;
+  }
+  /* 섹션04 변형스타일 */
+  .sec04{
+    height:500px;
+  }
+  .s4bg{
+    width:100%;
+    height: 500px;
+  }
+  .s04{
+    width:90%;
+    margin:2rem auto 0;
+  }
+  .s4img{
+    max-width: 30%;
+    margin-right:100px;
+  }
+  .s4t{
+    width:50%;
+    float:left;
+    margin-left:100px;
+  }
+  .s4t>h3{
+    font-size:1.5rem;
+    margin-bottom:1.8rem;
+  }
+  .s4t1{
+    font-size:1.7rem;
+    line-height: 140%;
+    box-sizing: border-box;
+  }
+  .s4t2{
+    margin-top:5rem;
+  }
+  .s4img{
+    max-width: 30%;
+    margin-right:80px;
+    position:absolute;
+    right:10px;
+  }
+  /* 섹션05 변형스타일 */
+  .sec05{
+    margin-bottom:5rem;
+  }
+  .s5bg>div{
+    width:90%;
+  }
+  .s05{
+    margin-top: 8rem;
+  }
+  .s5bg{
+    height:300px;
+}
+  /* 섹센06 변형스타일 */
+  .sec06{
+    height:600px;
+  }
+  .s06{
+    box-sizing: border-box;
+    margin:0 50px;
+    padding:4rem 0;
+  }
+  .s6bg{
+    height:600px;
+  }
+  .s6t{
+    width:27%;
+    float:none;
+    text-align: left;
+  }
+  .s6hr{
+    width:6rem;
+  }
+  .s6t2{
+    font-size:2rem;
+    line-height: 3rem;
+  }
+  .s6img>ul{
+    width:100%;
+    padding-top:30px;
+  }
+  .s6img>ul>li{
+    width:22%;
+  }
+  .s6img>ul>li>p{
+    font-size:1rem;
+  }
+  .s6img>ul>li>p>span{
+    font-size:0.7rem;
+  }
+  /* 섹션08 변형스타일 */
+  footer>div>p{
+    font-size:0.8rem;
+    width:80%;
+    float:left;
+  }
+  .ftimg{
+    width:17%;
+    float:right;
+  }
+}

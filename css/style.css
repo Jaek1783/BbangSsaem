@@ -8,6 +8,14 @@ body{
   box-sizing: border-box;
   word-break: keep-all;
 }
+h2{
+  padding:0;
+  margin:0;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+
+}
 img{
   width:100%;
 }

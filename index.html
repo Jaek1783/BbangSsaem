@@ -50,6 +50,7 @@
     </header>
     <!-- 섹션01 이미지 슬라이더 -->
     <section class="sec01 container">
+      <h2>이미지 슬라이더</h2>
         <ul id = "slider" class="slider-container slides">
           <li class="s1bg1 slide">
             <div class="s01">
@@ -114,6 +115,7 @@
     </section>
     <!-- 섹션 02 소개페이지 -->
     <section class="sec02 dp">
+      <h2>카페 소개 페이지</h2>
       <div class="s02">
         <div class="s2t">
           <p class="s2t1">빵쌤소개</p>
@@ -152,6 +154,7 @@
     </section>
     <!-- 섹션 03 빵과 커피 소개 -->
     <section class="sec03 dp">
+        <h2>발효된 빵과 고품질 커피 페이지</h2>
       <div class="s03 s3t s3lt dp">
         <div>
           <p class="s3t1 kr">Fermentation</p>
@@ -175,6 +178,7 @@
     </section>
     <!-- 섹션 04 셰프소개 페이지 -->
     <section class="sec04 dp">
+      <h2>셰프 소개 페이지</h2>
       <div class="s4bg">
         <div class="s04 dp">
           <div class="s4t">
@@ -195,9 +199,10 @@
     </section>
     <!-- 섹션 05 인테리어 소개 페이지-->
     <section class="sec05 dp">
+      <h2>빵쌤 인테리어 페이지</h2>
       <div class="s5bg">
         <div>
-          <h3>Bbang Ssaem <span class="subTitle">Interior</sapn></h3>
+          <h3>Bbang Ssaem <span class="subTitle">Interior</span></h3>
           <ul>
             <li>
               <img src="images/interior/main_int_img01.png" alt="인테리어사진01">
@@ -224,6 +229,7 @@
     </section>
     <!-- 섹션 06 메뉴소개 페이지 -->
     <section class="sec06 dp">
+      <h2>메뉴소개 페이지</h2>
       <div class="s6bg">
         <div class="s06">
           <div class="s6t">
@@ -265,6 +271,7 @@
     </section>
     <!-- 섹션07 인스타그램 광고 페이지 -->
     <section class="sec07 dp">
+      <h2>인스타그램 광고 페이지</h2>
       <div class="s07">
         <a href="#">
         <img src="images/instar/ins_bg.jpg" alt="인스타그램 광고">
@@ -273,6 +280,7 @@
     </section>
     <!-- 섹션08 창업지원 페이지 -->
     <section class="sec08 dp">
+      <h2>창업지원 페이지</h2>
       <div class="s8bg">
         <div class="s08">
         <p class="s8t1">Franchise</p>
@@ -297,16 +305,13 @@
     </footer>
   </div>
   </body>
-  <script type="text/javascript">
+  <script>
   // header scroll
   var hbg = document.getElementById('header'),
       docElem = document.documentElement,
       offset,
       scrollPos,
       docHeight;
-// 문서 Height크기 구하기
-  docHeight = Math.max(docElem.offsetHeight,docElem.scrollHeight);
-  console.log(docHeight);
 // 스크롤 양 구하기
 if(docHeight != 0){
     offset = 10;

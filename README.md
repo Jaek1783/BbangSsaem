@@ -4,4 +4,4 @@
 3. HTML5, CSS3 구조 코딩
 4. 반응형 웹디자인 
 5. Js 작동 구현
-6. 
+6. Github hosting.

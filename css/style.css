@@ -126,7 +126,7 @@ nav ul>li:hover{
 .slider-container{
   position:absolute;
   width:100%;
-  height:55rem;
+  /* height:60rem; */
   /* overflow: hidden; */
   /* display:flex; */
 }
@@ -139,7 +139,8 @@ nav ul>li:hover{
   box-sizing: border-box;
   text-align:center;
   overflow: hidden;
-  padding:20% 0;
+  padding-top:20%;
+  padding-bottom:20%;
   /* float:left; */
 }
 .s1bg1{

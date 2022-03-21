@@ -4,6 +4,10 @@
     height:3rem;
     padding:0.5rem;
   }
+  /* 섹션01 변형스타일 */
+  .sec01{
+    height:32rem;
+  }
   /* 섹션02 변형스타일 */
   .s2img>ul>li{
     float:left;

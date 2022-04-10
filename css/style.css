@@ -1,12 +1,13 @@
 @charset "UTF-8";
 body{
   font-size: 17px;
-  font-family:arial, Veranda, sans-serif;
+  font-family: 'Noto Sans KR', arial, Veranda, sans-serif;
   /* background-color:#000; */
   /* color: #fff; */
   line-height: 140%;
   box-sizing: border-box;
   word-break: keep-all;
+  color:#414141;
 }
 h2{
   padding:0;
@@ -23,8 +24,8 @@ img{
   display:table;
 }
 .kr{
-  font-family:  'Noto Sans CJK KR',"gulim";
-  font-weight:bold;
+  font-family: 'Gothic A1', sans-serif;
+
 }
 /* 헤더 스타일 */
 header{
@@ -32,11 +33,12 @@ header{
   top:0;
   left:0;
   width:100%;
-  height:3rem;
+  height:6.35rem;
   z-index:1000;
-  padding: 0.5rem;
+  padding:1.38rem 2.13rem;
   border-bottom: 1px solid #fff;
   color:#fff;
+  box-sizing: border-box;
 
 }
 header.bg{
@@ -44,34 +46,40 @@ header.bg{
     border-bottom: 1px solid #000;
     transition: all 0.3s;
 }
+.wrap{
+  width:100%;
+  height:4rem;
+  margin:0 auto;
+}
 h1{
-  width:40px;
+  width:3.56rem;
   display:inline-block;
 }
-nav{
-  position:absolute;
-  right:8%;
-  top:30%;
-  font-size: 1.2rem;
-  display: inline-block;
-  padding-right: 2rem;
-  font-weight: bold;
+.menu{
+  position: absolute;
+    right: 8%;
+    top: 32%;
+    font-size: 1.28rem;
+    font-family: "Montserrat";
+    display: inline-block;
+    color: #fff;
+    padding-right: 2.5rem;
 }
 nav ul>li{
-  float:left;
-  padding-left: 3rem;
-  padding-top: 0.5rem;
-  font-weight:500;
+  float: left;
+    padding-left: 3rem;
+    padding-top: 0.5rem;
+    font-weight: 500;
 }
 nav ul>li:hover{
   cursor: pointer;
   color:#e09036;
 }
 .gnb{
-  width:40px;
-  position: fixed;
-  right:10px;
-  top:10px;
+  width:30px;
+  position:absolute;
+  right:5%;
+  top:30%;
   display:none;
 }
 .gnb:hover{
@@ -85,10 +93,11 @@ nav ul>li:hover{
   width:50%;
   background-color: rgba(0, 0, 0, 0.9);
   height:100%;
-  display: none;
+  font-family: "Montserrat";
+  /* display: none; */
 }
 .close{
-  width:30px;
+  width:10%;
   position: absolute;
   right:10px;
   top:20px;
@@ -100,15 +109,18 @@ nav ul>li:hover{
   transition: left .3s ease-in;
 }
 .sNav{
-  width:50%;
-  margin:0 20px;
+  width:70%;
+  margin:0 1rem;
   text-align:left;
   position:relative;
 }
 .sNav>li{
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 140%;
   cursor: pointer;
+  width:100%;
+  border-bottom:1px solid #fff;
+  padding-top:2rem;
 }
 .sNav>li:hover{
   color:#e09036;
@@ -125,47 +137,35 @@ nav ul>li:hover{
 }
 .slider-container{
   position:absolute;
-  width:100%;
-  /* height:60rem; */
-  /* overflow: hidden; */
-  /* display:flex; */
+  display:flex;
+  width:300%;
 }
-.slider-container.animated{
+.animated{
   transition: left .3s ease-in;
 }
 .slide{
-  position:absolute;
+  text-align: center;
   width:100%;
   box-sizing: border-box;
   text-align:center;
   overflow: hidden;
-  padding-top:20%;
-  padding-bottom:20%;
-  /* float:left; */
+  padding-top:8%;
+  padding-bottom:10%;
 }
 .s1bg1{
-  background: no-repeat center url("../images/main/main_B01.png");
-  background-size: cover;
+  background: no-repeat center url("../images/main/main_B02.png");
+  background-size:cover;
 }
 .s1bg2{
-  background: no-repeat center url("../images/main/main_B02.png");
-  background-size: cover;
-}
-.s1bg3{
   background: no-repeat center url("../images/main/main_B03.png");
   background-size: cover;
 }
-.s1bg4{
-  background: no-repeat center url("../images/main/main_B04.png");
-  background-size: cover;
-}
-.s1bg5{
-  background: no-repeat center url("../images/main/main_B05.png");
-  background-size: cover;
-}
 .pager{
+  width:100%;
   position:absolute;
-  left:0;right:0;bottom:8%;
+  top:65%;
+  left:0;
+  right:0;
   text-align: center;
 }
 .pager span{
@@ -192,41 +192,40 @@ section{
   width:100%;
 }
 .sec01{
+  text-align: center;
   font-size: 2rem;
   color:#fff;
-  height:55rem;
-  /* padding-bottom:1rem; */
+  height:68rem;
 }
-.s01{
-  width:80%;
-  margin:0 auto;
-  border: 1px solid #fff;
-  text-align: center;
-  padding-bottom: 3rem;
-  background: rgba(0, 0, 0, 0.3);
-  box-shadow: 20px 4px 32px rgba(255, 255,255, 0.4);
-}
+.title{}
 .s1img{
-  width:45%;
+  width:51%;
   margin: 0 auto;
 }
-.s1t{
-  padding:2.5rem 0;
+.s1t{}
+.s1t1{
+  font-size:2.13rem;
+  font-family: "Montserrat";
+  line-height: 110%;
 }
-.s1t1{}
-.s1t2{}
+.s1t2{
+  padding-top:3.19rem;
+  font-size: 2.13rem;
+}
 .s1btn{
-  width:10rem;
+  width:13%;
   font-size:1.1rem;
   position:relative;
   display: inline-block;
   padding:1.2rem;
   border:2px solid #fff;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
+  margin-top:2rem;
+  box-sizing: border-box;
 }
 /* 섹션02 스타일 */
 .sec02{
-  margin-top:8rem;
+  margin-top:3.5rem;
     margin-bottom:8rem;
 }
 .s02{
@@ -276,7 +275,8 @@ hr{}
 }
 .s2lt{
   padding-top:1rem;
-  color:#333;
+  font-size:1rem;
+  color:#949494;
 }
 
 /* 섹션03스타일 */

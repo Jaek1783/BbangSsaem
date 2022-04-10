@@ -44,4 +44,9 @@ input:focus {
 a {
   color: inherit;
   text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+  vertical-align: middle;
+  cursor: pointer;
+  font-weight:500;
 }

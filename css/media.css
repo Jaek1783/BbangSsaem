@@ -308,7 +308,10 @@
     display:block;
   }
   /* 섹션01 변형스타일 */
-
+  .slide{
+    padding-top:10%;
+    padding-bottom:10%;
+  }
   .s01{
     text-align: center;
   }
@@ -333,7 +336,7 @@
     border:2px solid #fff;
   }
   .pager{
-    top:60%;
+    top:80%;
   }
   /* 섹션02 변형스타일 */
   .sec02{
@@ -504,7 +507,7 @@
 @media (max-width:620px) {
   /* 섹션01 변형스타일 */
   .pager{
-    top:55%;
+    top:70%;
   }
   /* 섹션02 변형스타일 */
   .s2img>ul>li{

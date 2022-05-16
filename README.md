@@ -1,7 +1,9 @@
-# 자주가는카페 홈페이지 코딩하기 < 2022.03.01 ~ 2022.03 27 >
+# 자주가는카페 홈페이지 코딩하기
 # ![port01](https://user-images.githubusercontent.com/73649967/168503354-c9dd3c26-0255-4f56-927f-811eea38c6a5.png)
 
-## 👍주소
+## 🗓️기간
+< 2022.03.01 ~ 2022.03 27 >
+## 💻주소
 http://jaek1783.git.io/BbangSsaem
 
 ## 😁개요
@@ -20,6 +22,6 @@ http://jaek1783.git.io/BbangSsaem
 - 메인 이미지 2장이 무한 루프 되는 슬라이드를 구성하였다.
 - 페이져버튼을 구성하여 클릭하여 이미지 이동될 수 있도록 구성하였다.
 
-## USE 라이브러리
+## ✏️USE 라이브러리
 <img src="https://img.shields.io/badge/Photoshop-31A8FF?style=for-the-badge&logo=Adobe Photoshop&logoColor=white"> <img src="https://img.shields.io/badge/Pixabay-2EC66D?style=for-the-badge&logo=Pixabay&logoColor=white"> <img src="https://img.shields.io/badge/Atom-66595C?style=for-the-badge&logo=Atom&logoColor=white">
 

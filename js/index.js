@@ -35,7 +35,6 @@ function slider(){
       },500);
     }
       // 클릭된 그 요소에만 .active 추가
-      console.log(pagerBtn);
       for(var y=0; y < pagerBtn.length; y++){
       pagerBtn[y].classList.remove('active');
     }if(idx==0){
@@ -53,7 +52,6 @@ function slider(){
         timer = setInterval(function(){
             var nextIdx = (currentIndex + 1);
             goToSlide(nextIdx);
-            console.log(currentIndex, slideCount);
           },3000);
       }
       slideAuto();
@@ -65,7 +63,6 @@ function slider(){
 // var pagerNum = event.target.getAttribute('data-idx');
       var pagerNum = event.target.innerText-1;
       goToSlide(pagerNum);
-      console.log(pagerNum);
     });
   }
 }

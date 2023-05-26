@@ -1,0 +1,558 @@
+@charset "UTF-8";
+body{
+  font-size: 17px;
+  font-family: 'Noto Sans KR', arial, Veranda, sans-serif;
+  /* background-color:#000; */
+  /* color: #fff; */
+  line-height: 140%;
+  box-sizing: border-box;
+  word-break: keep-all;
+  color:#414141;
+}
+h2{
+  padding:0;
+  margin:0;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+
+}
+img{
+  width:100%;
+}
+.dp{
+  display:table;
+}
+.kr{
+  font-family: 'Gothic A1', sans-serif;
+
+}
+/* 헤더 스타일 */
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:6.35rem;
+  z-index:1000;
+  padding:1.38rem 2.13rem;
+  border-bottom: 1px solid #fff;
+  color:#fff;
+  box-sizing: border-box;
+
+}
+header.bg{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #000;
+    transition: all 0.3s;
+}
+.wrap{
+  width:100%;
+  height:4rem;
+  margin:0 auto;
+}
+h1{
+  width:3.56rem;
+  display:inline-block;
+}
+.menu{
+  position: absolute;
+    right: 8%;
+    top: 32%;
+    font-size: 1.28rem;
+    font-family: "Montserrat";
+    display: inline-block;
+    color: #fff;
+    padding-right: 2.5rem;
+}
+nav ul>li{
+  float: left;
+    padding-left: 3rem;
+    padding-top: 0.5rem;
+    font-weight: 500;
+}
+nav ul>li:hover{
+  cursor:default;
+  color:#e09036;
+}
+.gnb{
+  width:30px;
+  position:absolute;
+  right:5%;
+  top:30%;
+  display:none;
+}
+.gnb:hover{
+  cursor: pointer;
+}
+.sGnb{
+  position:fixed;
+  right:0;
+  top:0;
+  z-index: 1000;
+  width:50%;
+  background-color: rgba(0, 0, 0, 0.9);
+  height:100%;
+  font-family: "Montserrat";
+  /* display: none; */
+}
+.close{
+  width:10%;
+  position: absolute;
+  right:10px;
+  top:20px;
+}
+.close:hover{
+  cursor: pointer;
+}
+.sGnb.animated{
+  transition: left .3s ease-in;
+}
+.sNav{
+  width:70%;
+  margin:0 1rem;
+  text-align:left;
+  position:relative;
+}
+.sNav>li{
+  font-size: 1.5rem;
+  line-height: 140%;
+  cursor: pointer;
+  width:100%;
+  border-bottom:1px solid #fff;
+  padding-top:2rem;
+}
+.sNav>li:hover{
+  color:#e09036;
+}
+.sNav>li:hover>a{
+  color:#e09036;
+}
+/* 섹션01 스타일 */
+/* 슬라이더 스타일 */
+.container{
+  position:relative;
+  width:100%;
+  overflow: hidden;
+}
+.slider-container{
+  position:absolute;
+  display:flex;
+  width:300%;
+}
+.animated{
+  transition: left .3s ease-in;
+}
+.slide{
+  text-align: center;
+  width:100%;
+  box-sizing: border-box;
+  text-align:center;
+  overflow: hidden;
+  padding-top:8%;
+  padding-bottom:10%;
+}
+.s1bg1{
+  background: no-repeat center url("../images/main/main_B01.png");
+  background-size:cover;
+}
+.s1bg2{
+  background: no-repeat center url("../images/main/main_B03.png");
+  background-size: cover;
+}
+.pager{
+  width:100%;
+  position:absolute;
+  bottom:15%;
+  left:0;
+  right:0;
+  text-align: center;
+}
+.pager span{
+  width:10px;
+  height:10px;
+  background: #000;
+  border-radius: 50%;
+  display: inline-block;
+  text-indent:-9999em;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.pager span.active{
+  background-color:#fff;
+}
+.s1sb{
+  width:10px;
+  height:10px;
+  background-color:#333;
+  border-radius: 45%;
+  display: inline-block;
+}
+section{
+  width:100%;
+}
+.sec01{
+  text-align: center;
+  font-size: 2rem;
+  color:#fff;
+  height:68rem;
+}
+.title{}
+.s1img{
+  width:51%;
+  margin: 0 auto;
+}
+.s1t{}
+.s1t1{
+  font-size:2.13rem;
+  font-family: "Montserrat";
+  line-height: 110%;
+}
+.s1t2{
+  padding-top:3.19rem;
+  font-size: 2.13rem;
+}
+.s1btn{
+  width:13%;
+  font-size:1.1rem;
+  position:relative;
+  display: inline-block;
+  padding:1.2rem;
+  border:2px solid #fff;
+  background: rgba(0, 0, 0, 0.3);
+  margin-top:2rem;
+  box-sizing: border-box;
+}
+/* 섹션02 스타일 */
+.sec02{
+  margin-top:3.5rem;
+    margin-bottom:8rem;
+}
+.s02{
+  width:1240px;
+  margin:0 auto;
+}
+.s2t{
+  line-height: 2.5rem;
+  font-size: 2rem;
+  display: block;
+  text-align: left;
+  float:left;
+  width:30%;
+  margin-right:3rem;
+}
+.s2t1{
+  padding-bottom:2rem;
+  color:#e09036;
+}
+.s2t2{
+  font-size: 2.5rem;
+}
+.s2t3{
+  font-size:1.2rem;
+  color:#333;
+  line-height: 1.5rem;
+}
+.subTitle{
+  color:#e09036;
+}
+hr{}
+.s2hr{
+  width:2rem;
+  margin:2.5rem 0;
+  border:1px solid #000;
+}
+.s2img{}
+.s2img>ul{}
+.s2img>ul>li{
+  float:left;
+  width:20%;
+  padding-right:1.5rem;
+}
+.s2lh{
+  padding-top:1.5rem;
+  font-size: 1.5rem;
+}
+.s2lt{
+  padding-top:1rem;
+  font-size:1rem;
+  color:#949494;
+}
+
+/* 섹션03스타일 */
+.sec03{
+  width:100%;
+}
+.s3t{
+  height:462px;
+  text-align: center;
+  width:50%;
+  color:#fff;
+  font-size:2rem;
+  float:left;
+}
+.s3lt{
+  background: no-repeat center url("../images/bread,coffee/main_bread.png");
+  background-size: cover;
+}
+.s3t>div{
+  display: table-cell;
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.s3br{
+  display: none;
+}
+.s3t1{}
+strong{
+    font-weight: bold;
+  }
+.s3t2{
+  padding:2rem 0;
+  font-size: 2.5rem;
+}
+.s3t>div>a{
+  font-size:1rem;
+  position:relative;
+  display: inline-block;
+  padding:0.5rem 2rem;
+  border:2px solid #fff;
+}
+.s3rt{
+  background: no-repeat center url("../images/bread,coffee/main_coffee.png");
+  background-size: cover;
+}
+/* 섹센04 스타일 */
+.sec04{
+  height:700px;
+  background: no-repeat center url("../images/chef/bakery.png");
+  background-size: cover;
+}
+.s4bg{
+  width:100%;
+  height: 700px;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: table;
+  padding:8rem 0;
+  position: relative;
+  box-sizing: border-box;
+}
+.s04{
+  width:1240px;
+  margin:0 auto;
+}
+.s4t{
+  width:50%;
+  float:left;
+}
+.s4t>h3{
+  font-size:2rem;
+  margin-bottom:1.8rem;
+}
+.s4t1{
+  font-size:2rem;
+  line-height: 140%;
+  box-sizing: border-box;
+}
+.s4t2{
+  margin-top:5rem;
+}
+.s4img{
+  max-width: 30%;
+  margin-right:170px;
+  position:absolute;
+  right:10px;
+}
+.s4t>a{
+  font-size:1rem;
+  position:relative;
+  display: inline-block;
+  padding:0.5rem 2rem;
+  background-color: #3e3f43;
+  color:#fff;
+  margin-top:3rem;
+  box-shadow: 20px 4px 32px rgba(0, 0, 0, 0.4);
+}
+/* 섹션05 스타일 */
+.sec05{
+  margin-bottom:8rem;
+}
+.s5bg{
+  background: no-repeat center url("../images/interior/main_int_bg.png");
+  background-size: cover;
+  height:373px;
+  position:relative;
+}
+.s5bg>div{
+  width:1240px;
+  position:absolute;
+  transform: translate(-50%, -50%);
+  left:50%;
+  top:85%;
+  margin: 0 auto;
+}
+.s5bg>div>h3{
+  color:#fff;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.s5bg>div>ul{
+  box-sizing: border-box;
+  display:table;
+  width:100%;
+  text-align: center;
+}
+.s5bg>div>ul>li{
+  width:22%;
+  display:inline-block;
+  /* float:left; */
+  margin-left: 1rem;
+}
+.s5bg>div>ul>li:first-child{
+  margin-left: 0;
+}
+.s05{
+  width:100%;
+  box-sizing:border-box;
+  display: table;
+  margin-top: 10rem;
+  text-align:center;
+}
+.s5t{
+  width:100%;
+  box-sizing: border-box;
+}
+.s5t1{
+  margin-top:2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.s5t2{
+  padding-top:2rem;
+  font-size: 1rem;
+  color:#333;
+}
+.s05>a{
+  font-size:1rem;
+  position:relative;
+  display: inline-block;
+  padding:0.5rem 2rem;
+  background-color: #3e3f43;
+  color:#fff;
+  margin-top:3rem;
+  box-shadow: 20px 4px 32px rgba(0, 0, 0, 0.4);
+}
+/* 섹션06스타일 */
+.sec06{
+  background: no-repeat center  url("../images/menu/menu_bg.png");
+  background-size: cover;
+  height:470px;
+}
+.s6bg{
+      background-color: rgba(255, 255, 255, 0.7);
+      height:470px;
+}
+.s06{
+  width:90%;
+  box-sizing: border-box;
+  margin:0 120px;
+  padding:5rem 0;
+}
+.s6t{
+  width:27%;
+  float:left;
+  text-align: left;
+}
+.s6hr{
+  width:2rem;
+  margin:0.5rem 0;
+  padding-top:1px;
+  border:1px solid #000;
+}
+.s6t1{
+  font-size:2.2rem;
+  padding-bottom: 2rem;
+}
+.s6t2{
+  font-size:2.5rem;
+  line-height: 3rem;
+}
+.s6t3{}
+.s6img>ul{
+  text-align: center;
+}
+.s6img>ul>li{
+  width:15%;
+  display: inline-block;
+  padding-left:1rem;
+}
+.s6img>ul>li>p{
+  font-weight:bold;
+}
+.s6img>ul>li>p>span{
+  font-weight:normal;
+}
+/* 섹션07 스타일 */
+.s07{
+  padding:4rem;
+}
+/* 섹션08 스타일 */
+.sec08{
+  height:500px;
+  background: no-repeat center  url("../images/footer/footer.jpg");
+  background-size: cover;
+}
+.s8bg{
+  background-color: rgba(0, 0, 0, 0.7);
+  height:500px;
+}
+.s08{
+  width:80%;
+  text-align: center;
+  margin: 0 auto;
+  padding:3rem 0;
+  color:#fff;
+}
+.s8t1{
+  font-size:3rem;
+  padding-bottom:3rem;
+}
+.s8t2{
+  font-size:2.2rem;
+  line-height: 3.2rem;
+}
+.s8t3{
+  padding-top:20px;
+}
+.s08>a{
+  font-size:1rem;
+  position:relative;
+  display: inline-block;
+  padding:0.5rem 2rem;
+  border: 2px solid #fff;
+  color:#fff;
+  margin-top:3rem;
+  box-shadow: 20px 4px 32px rgba(0, 0, 0, 0.4);
+}
+/* footer스타일 */
+footer{
+  padding-bottom:3rem;
+}
+.ft{
+  padding:2rem 0;
+}
+
+footer>div{
+  width:90%;
+  margin:0 auto;
+}
+footer>div>p{
+  font-size:0.8rem;
+  width:50%;
+  float:left;
+}
+.ftimg{
+  width:20%;
+  float:right;
+}

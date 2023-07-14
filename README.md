@@ -4,7 +4,7 @@
 ## 🗓️기간
 < 2022.03.01 ~ 2022.03 27 >
 ## 💻주소
-http://jaek1783.git.io/BbangSsaem
+https://jaek1783.github.io/BbangSsaem/
 
 ## 😁개요
 
